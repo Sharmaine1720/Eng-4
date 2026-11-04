@@ -15,9 +15,29 @@
 @media(max-width:1100px){.brand{display:none}}
 @media(max-height:680px) and (orientation:landscape){.learning-screen,.mini-screen{padding:12px;grid-template-rows:42px minmax(0,1fr) 54px;gap:10px}.learning-top h2,.mini-top h2{font-size:26px;padding:7px 20px}.learning-content{gap:16px}.learning-info{gap:8px;padding:12px}.learning-info .guide img{width:70px;height:40px}.learning-info h3{font-size:50px}.word-example{font-size:18px}.speech-status{font-size:12px;min-height:30px}.listen-button{padding:8px 22px;font-size:17px;min-height:44px}.word-navigation{gap:15px}.word-navigation button{padding:8px 15px;min-height:44px}.mini-panel{padding:12px}.mini-intro{gap:10px}.mini-intro .guide img{width:80px;height:42px}.mini-intro h3{font-size:33px}.mini-intro p{font-size:19px}.surprise-symbol{font-size:62px}.mini-intro small{font-size:12px}.mini-instruction{font-size:22px}.chest-target{font-size:17px;max-height:220px}.mini-chest{max-height:165px}.stone-target{width:130px;height:110px}.peek-game,.trail-game{gap:10px}.mini-footer>span,.learning-bottom>span{font-size:11px}.mini-footer button,.learning-bottom button{font-size:14px;padding:7px 13px}.welcome-bottom .actions button{font-size:17px;padding:10px 20px}}
 @media(max-width:850px) and (orientation:landscape){.header-nav{gap:7px}.header-nav .map-button{font-size:12px;padding:0 10px}.learning-top h2,.mini-top h2{font-size:21px}.mini-top .question-count{font-size:11px}.learning-info .guide{display:none}.learning-info h3{font-size:40px}.mini-footer>span,.learning-bottom>span{display:none}.word-navigation button{font-size:14px}.stone-row{gap:24px}.stone-target{width:90px;height:90px}.mini-intro .guide{display:none}.mini-intro h3{font-size:27px}.mini-intro p{font-size:16px}.mini-instruction{font-size:18px}.surprise-symbol{font-size:52px}.marker-status small{font-size:9px}}
-/* Ownership evidence makes the yes/no pattern concrete instead of a guess. */
-.ownership-labels{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px}.player-label,.owner-tag{display:block;border:2px solid #5e9cb0;background:#e0f5ff;color:#245467;border-radius:12px;padding:8px 12px;font-size:16px;line-height:1.15}.owner-tag{background:#fff0b2;border-color:#c69b39;color:#65441e}.ownership-labels strong{font-size:21px}.ownership-support{display:flex;flex-direction:column;gap:9px}.ownership-rule{background:#fff9dd;border:2px solid #c6a95d;border-radius:16px;padding:9px 15px;color:#4e5733;text-align:center}.ownership-rule p{margin:0;font-size:18px;line-height:1.35}.ownership-rule small{display:block;font-size:12px;margin-top:4px}.ownership-question .stage{grid-template-rows:minmax(0,1fr) 92px}
-@media(max-height:680px) and (orientation:landscape){.player-label,.owner-tag{padding:6px 10px;font-size:14px}.ownership-labels strong{font-size:18px}.ownership-rule{padding:7px 12px}.ownership-rule p{font-size:16px}.ownership-support{gap:7px}.ownership-question .answer-panel{gap:12px}.ownership-question .guide span{font-size:15px}}
+/* Picture-first ownership clues for EFL learners. No name reading is needed. */
+.ownership-question .stage{grid-template-rows:minmax(0,1fr) 92px}
+.ownership-scene{width:100%;height:100%;min-height:0;display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.5fr);gap:12px;align-items:center;padding:5px}
+.you-picture{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;border:3px solid #62a5b9;border-radius:20px;background:#e2f6ff;padding:10px 6px;min-height:0}
+.you-badge{background:#278cb4;color:white;padding:4px 17px;border:2px solid white;border-radius:14px;font-size:21px;letter-spacing:1px}
+.child-picture{display:block;width:100%;height:100%;min-height:0}
+.you-picture .child-picture{height:auto;width:100%;max-height:145px}
+.you-picture small,.holder-picture>small{font-size:13px;color:#5a6445;line-height:1}
+.holder-picture{height:100%;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.holder-picture .child-picture{flex:1;min-height:0;max-height:100%;width:100%}
+.holder-picture>small{flex:none;margin-top:2px}
+.ownership-support{display:flex;flex-direction:column;gap:8px}
+.picture-prompt{margin:0;text-align:center;background:#fff9df;border:2px solid #c7a55b;border-radius:14px;padding:7px 10px;font-size:18px;color:#4e5734}
+.visual-rules{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.visual-rule{border:2px solid #b7c598;background:#fffbe8;border-radius:15px;display:flex;flex-direction:column;align-items:center;gap:3px;padding:5px 7px}
+.picture-pair{display:flex;align-items:center;justify-content:center;gap:8px}
+.picture-pair .child-picture{width:48px;height:45px;flex:none}
+.compare-symbol{font-size:26px;font-weight:bold;color:#49583d}
+.rule-answer{font-size:16px;font-weight:bold;color:#426339}
+.answer-explanation{display:flex;align-items:center;gap:14px;min-width:0}
+.result-pair .child-picture{width:42px;height:42px}
+.result-pair{flex:none;gap:4px}
+@media(max-height:680px) and (orientation:landscape){.ownership-scene{gap:8px;padding:0}.you-picture{padding:7px 5px;gap:5px}.you-picture .child-picture{max-height:112px}.you-badge{font-size:17px;padding:3px 13px}.you-picture small,.holder-picture>small{font-size:12px}.picture-prompt{font-size:16px;padding:6px 8px}.picture-pair .child-picture{width:42px;height:39px}.result-pair .child-picture{width:34px;height:36px}.ownership-question .answer-panel{gap:12px}.answer-explanation{gap:10px}}
 </style>
 </head>
 <body>
@@ -243,6 +263,52 @@ function chooseLevel(level) {
   }
   travel.frame = requestAnimationFrame(frame);
 }
+// Reusable picture cues: the same hat/hair/outfit are used in the YOU card,
+// item-holder scene, matching guide, and feedback. Names are optional captions.
+function childPicture(person, object = '', portrait = false) {
+  const alex = person === PLAYER_NAME;
+  const hair = alex
+    ? '<path d="M65 66Q62 20 110 19Q160 20 156 67l-15-15-12 8-20-12-22 13Z" fill="#734627"/>'
+    : '<circle cx="48" cy="81" r="25" fill="#533629"/><circle cx="172" cy="81" r="25" fill="#533629"/><path d="M61 77Q48 14 110 13Q174 12 160 79l-20-31-28 11-24-13Z" fill="#533629"/>';
+  const hatOrBow = alex
+    ? '<path d="M63 47Q63 9 111 9Q155 10 157 47Z" fill="#47abdc"/><path d="M56 45h110q7 17-13 17H68q-19 0-12-17Z" fill="#2387b8"/><path d="m109 18 4 9 10 1-8 7 2 10-8-5-9 5 2-10-7-7 10-1Z" fill="#ffe66b" stroke-width="2"/>'
+    : '<path d="m150 32-15-11-8 9 12 12-5 14 15 3 8-15 14-7-8-13Z" fill="#f387ac"/><circle cx="150" cy="40" r="6" fill="#ffce74"/>';
+  const shirt = alex ? '#48acd8' : '#f39962';
+  const emblem = alex
+    ? '<path d="m110 147 6 13 14 2-10 10 2 14-12-6-13 6 3-14-11-10 15-2Z" fill="#fff1a3"/>'
+    : '<path d="M110 180c-31-18-24-41-9-30l9 9 9-9c16-11 22 12-9 30Z" fill="#d95172"/>';
+  return `<svg class="child-picture ${portrait ? 'portrait' : 'full-child'}" data-person="${person}" ${object ? `data-held-object="${object}"` : ''} viewBox="${portrait ? '35 0 150 130' : '0 0 220 300'}" role="img" aria-label="${person}${object ? ` holding a ${object}` : alex ? ', your character, with a star cap' : ', another child, with pigtails and a bow'}">
+    <g stroke="#644731" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      ${!portrait ? '<ellipse cx="110" cy="286" rx="70" ry="9" fill="#c5b89355" stroke="none"/>' : ''}
+      ${hair}<circle cx="65" cy="78" r="10" fill="#f7caa5"/><circle cx="155" cy="78" r="10" fill="#f7caa5"/>
+      <ellipse cx="110" cy="76" rx="44" ry="48" fill="#ffd7b1"/>
+      ${hatOrBow}<ellipse cx="93" cy="78" rx="4" ry="6" fill="#493b30" stroke="none"/><ellipse cx="128" cy="78" rx="4" ry="6" fill="#493b30" stroke="none"/>
+      <path d="M99 95q12 13 24-1" fill="none"/><ellipse cx="82" cy="94" rx="8" ry="4" fill="#f09c91" stroke="none"/><ellipse cx="139" cy="94" rx="8" ry="4" fill="#f09c91" stroke="none"/>
+      <path d="M97 119v15h26v-15" fill="#f6c79d"/>
+      <path d="M80 133 57 152l-16 52 24 9 18-39M140 133l23 19 16 52-24 9-18-39" fill="${shirt}"/>
+      <path d="M80 132q30 18 60 0l17 98H63Z" fill="${shirt}"/>${emblem}
+      <path d="M73 231v40h28l9-32 9 32h28v-40Z" fill="${alex ? '#3b6891' : '#7f699c'}"/>
+      <path d="M72 268h30v15H62v-7Z M119 268h29l12 8v7h-41Z" fill="${alex ? '#9a6747' : '#d46a89'}"/>
+      ${object ? `<svg x="47" y="133" width="130" height="123" viewBox="0 0 160 160"><g stroke="#624d36" stroke-width="4">${shapes[object]}</g></svg><ellipse cx="66" cy="202" rx="12" ry="10" fill="#ffd7b1"/><ellipse cx="154" cy="202" rx="12" ry="10" fill="#ffd7b1"/>` : '<ellipse cx="52" cy="211" rx="12" ry="10" fill="#ffd7b1"/><ellipse cx="168" cy="211" rx="12" ry="10" fill="#ffd7b1"/>'}
+    </g>
+  </svg>`;
+}
+function ownershipScene(question) {
+  return `<div class="ownership-scene">
+    <div class="you-picture" aria-label="You are the child with a star cap"><b class="you-badge">YOU</b>${childPicture(PLAYER_NAME, '', true)}<small>${PLAYER_NAME}</small></div>
+    <div class="holder-picture">${childPicture(question.owner, question.object)}<small>${question.owner}</small></div>
+  </div>`;
+}
+function picturePair(owner, extraClass = '') {
+  return `<div class="picture-pair ${extraClass}" aria-label="${owner === PLAYER_NAME ? 'Same character' : 'Different characters'}">${childPicture(PLAYER_NAME, '', true)}<span class="compare-symbol" aria-hidden="true">${owner === PLAYER_NAME ? '=' : '≠'}</span>${childPicture(owner, '', true)}</div>`;
+}
+function ownershipHelp() {
+  return `<div class="ownership-support picture-support"><p class="picture-prompt">Look at <b>YOU</b>. Who has it?</p><div class="visual-rules">
+    <div class="visual-rule">${picturePair(PLAYER_NAME)}<span class="rule-answer">✓ Yes</span></div>
+    <div class="visual-rule">${picturePair('Mia')}<span class="rule-answer">✕ No</span></div>
+  </div></div>`;
+}
+
 function current() {
   const r = run();
   if (state.level === 0) {
@@ -256,12 +322,12 @@ function current() {
   }
   const q = answers[r.q];
   return {
-    prompt: q.place ? `Where's the ${q.object}?` : `Is this your ${q.asked}?`, art: scene(q),
+    prompt: q.place ? `Where's the ${q.object}?` : `Is this your ${q.asked}?`, art: q.owner ? ownershipScene(q) : scene(q),
     correct: q.place ? `It's ${q.place} the ${q.container}.` : q.owner === PLAYER_NAME ? 'Yes, it is.' : "No, it isn't.",
     wrong: q.place ? `It's ${q.other} the ${q.container}.` : q.owner === PLAYER_NAME ? "No, it isn't." : 'Yes, it is.',
     owner: q.owner,
-    explanation: q.place ? '' : q.owner === PLAYER_NAME ? `The tag says ${q.owner}. This ${q.object} is yours!` : `The tag says ${q.owner}. This ${q.object} belongs to ${q.owner}.`,
-    caption: q.place ? '' : `<div class="ownership-labels"><span class="player-label">You are <strong>${PLAYER_NAME}</strong></span><span class="owner-tag">Name on this item: <strong>${q.owner}</strong></span></div>`
+    explanation: q.place ? '' : q.owner === PLAYER_NAME ? `Alex (you) has the ${q.object}. It is yours!` : `Mia has the ${q.object}. It is not yours.`,
+    caption: ''
   };
 }
 function sentenceHTML() {
@@ -278,7 +344,7 @@ function renderGame() {
     <div class="stage">
       <div class="picture"><h3>${question.prompt}</h3><div class="picture-art">${question.art}</div>${question.caption || ''}</div>
       <div class="answer-panel">
-        ${state.level === 1 ? `<p class="instruction">${build[r.q][0] === 'Is' ? 'Ask: Is this your …?' : 'Ask: Where’s the …?'}<br><small>Tap the next word. The question mark is ready.</small></p><div class="sentence" aria-label="Sentence so far">${sentenceHTML()}</div>` : question.owner ? `<div class="ownership-support">${guide('You are Alex. Check the name tag!')}<div class="ownership-rule"><p><b>Yours?</b> Say “Yes, it is.”</p><p><b>Not yours?</b> Say “No, it isn’t.”</p><small>“Your” means it belongs to you.</small></div></div>` : guide('Look closely. You’ve got this!')}
+        ${state.level === 1 ? `<p class="instruction">${build[r.q][0] === 'Is' ? 'Ask: Is this your …?' : 'Ask: Where’s the …?'}<br><small>Tap the next word. The question mark is ready.</small></p><div class="sentence" aria-label="Sentence so far">${sentenceHTML()}</div>` : question.owner ? ownershipHelp() : guide('Look closely. You’ve got this!')}
         <div class="choices">${options.map(value => `<button class="choice ${r.wrongChoice === value ? 'wrong' : r.solved && value === question.correct ? 'correct' : ''}" data-answer="${escapeHTML(value)}" data-turn="${turnKey()}" ${r.solved || r.wrongChoice === value ? 'disabled' : ''}>${escapeHTML(value)}</button>`).join('')}</div>
       </div>
       <div id="feedback" class="feedback ${r.solved ? 'good' : r.wrongChoice ? 'bad' : ''}" role="status" aria-live="polite">${feedbackHTML()}</div>
@@ -289,9 +355,9 @@ function feedbackHTML() {
   const r = run();
   if (r.solved) {
     const text = state.level === 1 ? build[r.q].slice(0, -1).join(' ') + '?' : current().correct;
-    return `<div><p>✓ ${escapeHTML(text)}</p><small>${current().explanation ? escapeHTML(current().explanation) + '<br>' : ''}${r.mistake ? 'You found it! 0 points after a retry.' : `Great discovery! +${LEVELS[state.level].points} points`}</small></div><button class="primary green" data-action="next" data-turn="${turnKey()}">Next →</button>`;
+    return `<div class="answer-explanation">${current().owner ? picturePair(current().owner, 'result-pair') : ''}<div><p>✓ ${escapeHTML(text)}</p><small>${current().explanation ? escapeHTML(current().explanation) + '<br>' : ''}${r.mistake ? 'You found it! 0 points after a retry.' : `Great discovery! +${LEVELS[state.level].points} points`}</small></div></div><button class="primary green" data-action="next" data-turn="${turnKey()}">Next →</button>`;
   }
-  if (r.wrongChoice) return `<div><p>Not quite! Try the other choice.</p><small>${current().owner ? 'Look at the name tag. You are Alex. Does this item belong to you?<br>' : ''}Keep exploring. This question earns 0 points after a retry.</small></div>`;
+  if (r.wrongChoice) return `<div><p>Not quite! Try the other choice.</p><small>${current().owner ? 'Look at the pictures: same child, or a different child?<br>' : ''}Keep exploring. This question earns 0 points after a retry.</small></div>`;
   return guide(state.level === 1 && r.step > 0 ? 'Great start! What comes next?' : 'Choose one answer. Your first try earns points!');
 }
 function selectAnswer(value, turn) {
